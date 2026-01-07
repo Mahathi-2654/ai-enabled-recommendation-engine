@@ -28,5 +28,20 @@ This matrix will be used in the next milestone to develop recommendation models.
 - Amazon Product Reviews Dataset (Kaggle)  
   Dataset by Arham Rumi
 
+## Data Files (Google Drive)
+
+Due to GitHub file size limitations, the processed datasets generated during Milestone 1 are hosted on Google Drive.
+
+- **Cleaned Reviews Dataset (`cleaned_reviews.csv`)**  
+  https://drive.google.com/file/d/1NYuWacU84vgyJ2OeKYC6ZR00-cqo1m0r/view?usp=drive_link
+
+- **User–Item Interaction Matrix (`user_item_matrix.csv`)**  
+  https://drive.google.com/file/d/1gUbaqX5DiLuOsYES1f8hqhj7BNl2PhFc/view?usp=drive_link
+
+### Access
+- Anyone with the link can view and download the files.
+
+> Note: These files were generated as part of the data preparation process and are required for further model development in upcoming milestones.
+
 > Note: Due to GitHub file size limitations, large datasets and generated matrices are not uploaded. The complete data preparation code is available in the notebooks folder.
 
