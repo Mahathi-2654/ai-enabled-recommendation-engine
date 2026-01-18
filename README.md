@@ -45,3 +45,36 @@ Due to GitHub file size limitations, the processed datasets generated during Mil
 
 > Note: Due to GitHub file size limitations, large datasets and generated matrices are not uploaded. The complete data preparation code is available in the notebooks folder.
 
+---
+
+## Milestone 2: Model Building
+
+### Objective
+To build and train a recommendation model using the cleaned user–item interaction data prepared in Milestone 1.
+
+### Approach
+In this milestone, an item-based collaborative filtering approach was implemented.  
+The model uses cosine similarity to identify relationships between products based on historical user ratings.
+
+### Model Description
+- A user–item interaction matrix was created from the cleaned dataset.
+- Missing values were filled with zero to represent no interaction.
+- The matrix was transposed to compute item–item similarity.
+- Cosine similarity was used to calculate how similar products are to each other.
+
+### Recommendation Logic
+A recommendation function was implemented that:
+- Takes a product ID as input
+- Finds similar products using the item–item similarity matrix
+- Returns the top-N most similar products excluding the product itself
+
+### Evaluation
+The model was tested by generating top-N product recommendations for sample products.  
+The results show that the system produces meaningful recommendations based on user interaction patterns.
+
+### Tools Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Google Colab
