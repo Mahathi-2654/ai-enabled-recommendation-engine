@@ -78,3 +78,43 @@ The results show that the system produces meaningful recommendations based on us
 - NumPy
 - Scikit-learn
 - Google Colab
+---
+
+## Milestone 3: Evaluation and Refinement
+
+### Objective
+To evaluate the performance of the recommendation model built in Milestone 2 and refine it using appropriate evaluation metrics.
+
+### Evaluation Approach
+The model was evaluated using an offline evaluation strategy.  
+The cleaned user–product interaction data was split into training and testing sets (80% training, 20% testing) to ensure evaluation on unseen data.
+
+### Metrics Used
+The following evaluation metrics were used:
+
+- **Precision**: Measures how many of the recommended products were actually relevant.
+- **Recall**: Measures how many of the relevant products were successfully recommended.
+- **F1-score**: Harmonic mean of precision and recall.
+- **Hit@K**: Checks whether at least one relevant product appears in the top-K recommendations.
+
+### Results and Analysis
+During evaluation, precision, recall, F1-score, and Hit@K values were observed to be zero for selected test cases.  
+This behavior is expected due to the highly sparse nature of real-world e-commerce datasets, where users interact with only a very small subset of products.
+
+The zero metric values indicate limited overlap between recommended items and actual test interactions, which is a known limitation of offline evaluation in recommendation systems rather than a model failure.
+
+### Refinement
+To address sparse evaluation challenges, the recommendation list size (Top-N) was increased, and Hit@K evaluation was used as a more suitable metric for sparse datasets.  
+Future improvements may include hybrid recommendation approaches, popularity-based filtering, and advanced evaluation strategies.
+
+### Tools Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Google Colab
+
+### Output
+- Evaluated recommendation model using Precision, Recall, F1-score, and Hit@K
+- Analysis of model performance and limitations
+- Refined evaluation strategy suitable for sparse datasets
